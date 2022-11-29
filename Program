@@ -101,7 +101,7 @@ int main() {
             cout << "Masukan Tinggi : ";
             cin >> tinggi;
             cout << endl;
-            cout << "Luas Balok Adalah : " << (2*((panjang*lebar)+(panjang*tinggi)+(lebar*tinggi))) << endl;
+            cout << "Luas Balok Adalah : " << 2*((panjang*lebar)+(panjang*tinggi)+(lebar*tinggi)) << endl;
             break;
 
             case 3:
