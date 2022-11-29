@@ -1,0 +1,130 @@
+#include<iostream>
+using namespace std;;
+
+string nama_makanan;
+int menu, harga, jumlah, panjang, lebar, tinggi, keliling;
+char rpt;
+
+int main() {
+    do{
+
+
+    cout << "==================================================" << endl;
+    cout << "=                   Pilih Menu                   =" << endl;
+    cout << "==================================================" << endl;
+    cout << endl;
+    cout << "1. Menu Makanan" << endl;
+    cout << "2. Nilai Mahasiswa" << endl;
+    cout << "3. Menghitung Balok" << endl;
+    cout << endl;
+    cout << "Pilih : ";
+    cin >> menu;
+///////////////////////////////////   Menu Makanan   ////////////////////////////////////////////
+    switch(menu){
+        case 1:
+        system("CLS");
+        cout << "================================" << endl;
+        cout << "=         Menu Makanan         =" << endl;
+        cout << "================================" << endl;
+        cout << "1. Nasi Padang" << endl;
+        cout << "2. Dtop Fried Chicken" << endl;
+        cout << "3. Soto Babat" << endl;
+        cout << endl;
+        cout << "Pilih : ";
+        cin >> menu;
+        break;
+        switch(menu)
+        {
+            case 1:
+            system("CLS");
+            cout << "Pilihan Makanan : Nasi Padang" << endl;
+            cout << "Masukan Harga : Rp. ";
+            cin >> harga;
+            cout << "Masukan Jumlah : ";
+            cin >> jumlah;
+            cout << "Total Bayar : Rp. " << harga*jumlah << endl;
+            break;
+
+            case 2:
+            system("CLS");
+            cout << "Pilihan Makanan : Dtop Fried Chicken" << endl;
+            cout << "Masukan Harga : Rp. ";
+            cin >> harga;
+            cout << "Masukan Jumlah : ";
+            cin >> jumlah;
+            cout << "Total Bayar : Rp. " << harga*jumlah << endl;
+            break;
+            
+            case 3:
+            system("CLS");
+            cout << "Pilihan Makanan : Soto Babat" << endl;
+            cout << "Masukan Harga : Rp. ";
+            cin >> harga;
+            cout << "Masukan Jumlah : ";
+            cin >> jumlah;
+            cout << "Total Bayar : Rp. " << harga*jumlah << endl;
+            break;
+        }
+    
+////////////////////////////////////////   Menghitung Balok   ///////////////////////////////////////////////////
+        case 3:
+        system("CLS");
+        cout << "==========================" << endl;
+        cout << "=  Pilihan Penghitungan  =" << endl;
+        cout << "==========================" << endl;
+        cout << "1. Menghitung Keliling Balok" << endl;
+        cout << "2. Menghitung Luas Balok" << endl;
+        cout << "3. Menghitung Volume Balok" << endl;
+        cout << endl;
+        cout << "Pilih : ";
+        cin >> menu;
+        switch(menu)
+        {
+            case 1:
+            system("CLS");
+            cout << "Masukan Panjang : ";
+            cin >> panjang;
+            cout << "Masukan Lebar : ";
+            cin >> lebar;
+            cout << "Masukan Tinggi : ";
+            cin >> tinggi;
+            cout << endl;
+            cout << "Keliling Balok Adalah : " << 4*(panjang+lebar+tinggi);
+            break;
+
+            case 2:
+            system("CLS");
+            cout << "Masukan Panjang : ";
+            cin >> panjang;
+            cout << "Masukan Lebar : ";
+            cin >> lebar;
+            cout << "Masukan Tinggi : ";
+            cin >> tinggi;
+            cout << endl;
+            cout << "Luas Balok Adalah : " << (2*((panjang*lebar)+(panjang*tinggi)+(lebar*tinggi))) << endl;
+            break;
+
+            case 3:
+            system("CLS");
+            cout << "Masukan Panjang : ";
+            cin >> panjang;
+            cout << "Masukan Lebar : ";
+            cin >> lebar;
+            cout << "Masukan Tinggi : ";
+            cin >> tinggi;
+            cout << endl;
+            cout << "Volume Balok Adalah : " << panjang*lebar*tinggi << endl;
+            break;
+        }
+    
+}
+
+    cout << endl;
+    cout << "Kembali Ke Menu ? y/n : ";
+    cin >> rpt;
+    system("CLS");
+    
+
+    } while (rpt== 'Y' | rpt== 'y' );
+
+}
