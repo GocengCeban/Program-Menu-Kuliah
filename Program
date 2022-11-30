@@ -1,1 +1,149 @@
-Sabar coy , kode nya ada yang broken
+#include<iostream>
+using namespace std;;
+int menu, hargabarang, jumlahbarang, totalbayar, tugas,uts, uas, kehadiran, nilaiakhir, panjang, lebar,tinggi, balok;
+char rpt;
+string namabarang;
+
+
+int main()
+{
+    
+
+    do{
+
+        cout << "==================================================" << endl;
+        cout << "=                   Pilih Menu                   =" << endl;
+        cout << "==================================================" << endl;
+        cout << "Menghitung Nilai Akhir Mahasiswa" << endl;
+        cout << "Menghitung Pembayaran" << endl;
+        cout << "Menghitung Balok" << endl;
+        cout << endl;
+        cout << "Pilih : ";
+        cin >> menu;
+
+        switch(menu)
+        {
+            case 1:
+            system("CLS");
+            cout << "========================================";
+            cout << "=  Program Penghitung Nilai Mahasiswa  =";
+            cout << "========================================";
+            cout << endl;
+            cout << "Masukan Nilai Tugas : ";
+            cin >> tugas;
+            cout << "Masukan Nilai UTS : ";
+            cin >> uts;
+            cout << "Masukan Nilai UAS : ";
+            cin >> uas;
+            cout << "Masukan Kehadiran : ";
+            cin >> kehadiran;
+
+            nilaiakhir = ((0.2*tugas)+(0.3*uts)+(0.4*uas)+(0.1*kehadiran));
+            cout << "Nilai Total : " << nilaiakhir << endl;
+            if(nilaiakhir>=90){
+                cout << "Nilai Mahasiswa = A" << endl;
+            }
+            else if(nilaiakhir>=80){
+                cout << "Nilai Mahasiswa = B" << endl;
+            }
+            else if(nilaiakhir>=60){
+                cout << "Nilai Mahasiswa = C" << endl;
+            }
+            else if(nilaiakhir>=50){
+                cout << "Nilai Mahasiswa = D" << endl;
+            }
+            else {
+                cout << "Nilai Mahasiswa = E" << endl;
+            }
+            
+            break;
+
+
+            case 2:
+            system("CLS");
+            cout << "===================================" << endl;
+            cout << "=  Program Menghitung Pembayaran  =" << endl;
+            cout << "===================================" << endl;
+            cout << "Masukan Nama Barang\t: ";
+            cin.ignore();
+            getline(cin, namabarang);
+            cout << "Harga Barang\t: ";
+            cin >> hargabarang;
+            cout << "Masukan Jumlah Barang\t: ";
+            cin >> jumlahbarang;
+
+            totalbayar = (hargabarang*jumlahbarang);
+
+            if(totalbayar>=500000){
+                cout << "Selamat Anda Mendapat Diskon 15%" << endl;
+                cout << "Total Bayar = Rp. " << (totalbayar-(0.15*totalbayar)) << endl;
+            }
+            else if(totalbayar>=250000){
+                cout << "Selamat Anda Mendapat Diskon 5%" << endl;
+                cout << "Total Bayar = Rp. " << (totalbayar-(0.05*totalbayar)) << endl;
+            }
+            else{
+                cout << "Pembelian Dibawah Rp. 250.000 Tidak Mendapat Diskon" << endl;
+                cout << "Total Bayar = Rp. " << (totalbayar) << endl;
+            }
+            break;
+
+
+            case 3:
+            system("CLS");
+            cout << "==========================" << endl;
+            cout << "=  Pilihan Penghitungan  =" << endl;
+            cout << "==========================" << endl;
+            cout << "1. Menghitung Keliling Balok" << endl;
+            cout << "2. Menghitung Luas Balok" << endl;
+            cout << "3. Menghitung Volume Balok" << endl;
+            cout << endl;
+            cout << "Pilih : ";
+            cin >> balok;
+            switch(balok){
+                case 1:
+                system("CLS");
+                cout << "Masukan Panjang : ";
+                cin >> panjang;
+                cout << "Masukan Lebar : ";
+                cin >> lebar;
+                cout << "Masukan Tinggi : ";
+                cin >> tinggi;
+                cout << endl;
+                cout << "Keliling Balok Adalah : " << 4*(panjang+lebar+tinggi);
+            break;
+
+                case 2:
+                system("CLS");
+                cout << "Masukan Panjang : ";
+                cin >> panjang;
+                cout << "Masukan Lebar : ";
+                cin >> lebar;
+                cout << "Masukan Tinggi : ";
+                cin >> tinggi;
+                cout << endl;
+                cout << "Luas Balok Adalah : " << 2*((panjang*lebar)+(panjang*tinggi)+(lebar*tinggi)) << endl;
+            break;
+
+                case 3:
+                system("CLS");
+                cout << "Masukan Panjang : ";
+                cin >> panjang;
+                cout << "Masukan Lebar : ";
+                cin >> lebar;
+                cout << "Masukan Tinggi : ";
+                cin >> tinggi;
+                cout << endl;
+                cout << "Volume Balok Adalah : " << panjang*lebar*tinggi << endl;
+            break;
+            }
+        }
+
+    cout << endl;
+    cout << "Kembali Ke Menu ? y/n : ";
+    cin >> rpt;
+    system("CLS");
+
+    } while (rpt== 'Y' | rpt== 'y' );
+    return 0;
+}
