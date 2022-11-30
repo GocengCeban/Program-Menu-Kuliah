@@ -14,9 +14,9 @@ int main()
         cout << "==================================================" << endl;
         cout << "=                   Pilih Menu                   =" << endl;
         cout << "==================================================" << endl;
-        cout << "Menghitung Nilai Akhir Mahasiswa" << endl;
-        cout << "Menghitung Pembayaran" << endl;
-        cout << "Menghitung Balok" << endl;
+        cout << "1. Menghitung Nilai Akhir Mahasiswa" << endl;
+        cout << "2. Menghitung Pembayaran" << endl;
+        cout << "3. Menghitung Balok" << endl;
         cout << endl;
         cout << "Pilih : ";
         cin >> menu;
