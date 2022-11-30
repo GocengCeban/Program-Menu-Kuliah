@@ -101,6 +101,7 @@ int main()
             cout << "Pilih : ";
             cin >> balok;
             switch(balok){
+            
                 case 1:
                 system("CLS");
                 cout << "Masukan Panjang : ";
