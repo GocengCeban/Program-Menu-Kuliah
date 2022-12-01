@@ -1,14 +1,12 @@
 #include<iostream>
 using namespace std;;
-int menu, hargabarang, jumlahbarang, totalbayar, tugas,uts, uas, kehadiran, nilaiakhir, panjang, lebar,tinggi, balok;
+int menu, nilaiakhir;
 char rpt;
 string namabarang;
 
 
 int main()
 {
-    
-
     do{
 
         cout << "==================================================" << endl;
@@ -24,6 +22,7 @@ int main()
         switch(menu)
         {
             case 1:
+            int tugas,uts, uas, kehadiran;
             system("CLS");
             cout << "========================================";
             cout << "=  Program Penghitung Nilai Mahasiswa  =";
@@ -40,6 +39,7 @@ int main()
 
             nilaiakhir = ((0.2*tugas)+(0.3*uts)+(0.4*uas)+(0.1*kehadiran));
             cout << "Nilai Total : " << nilaiakhir << endl;
+
             if(nilaiakhir>=90){
                 cout << "Nilai Mahasiswa = A" << endl;
             }
@@ -60,6 +60,7 @@ int main()
 
 
             case 2:
+            int hargabarang, jumlahbarang, totalbayar;
             system("CLS");
             cout << "===================================" << endl;
             cout << "=  Program Menghitung Pembayaran  =" << endl;
@@ -90,6 +91,7 @@ int main()
 
 
             case 3:
+            int balok;
             system("CLS");
             cout << "==========================" << endl;
             cout << "=  Pilihan Penghitungan  =" << endl;
@@ -100,8 +102,10 @@ int main()
             cout << endl;
             cout << "Pilih : ";
             cin >> balok;
+
             switch(balok){
-            
+            int panjang, lebar,tinggi;
+                
                 case 1:
                 system("CLS");
                 cout << "Masukan Panjang : ";
@@ -111,7 +115,7 @@ int main()
                 cout << "Masukan Tinggi : ";
                 cin >> tinggi;
                 cout << endl;
-                cout << "Keliling Balok Adalah : " << 4*(panjang+lebar+tinggi);
+                cout << "Keliling Balok Adalah : " << 4*(panjang+lebar+tinggi) << endl;
             break;
 
                 case 2:
