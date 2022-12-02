@@ -1,14 +1,16 @@
 #include<iostream>
 using namespace std;;
-int menu, nilaiakhir;
+int menu;
 char rpt;
 string namabarang;
 
 
 int main()
 {
-    do{
+    
 
+    do{ 
+        system("color a");
         cout << "==================================================" << endl;
         cout << "=                   Pilih Menu                   =" << endl;
         cout << "==================================================" << endl;
@@ -22,11 +24,12 @@ int main()
         switch(menu)
         {
             case 1:
-            int tugas,uts, uas, kehadiran;
+            system("color a");
+            int tugas,uts, uas, kehadiran,  nilaiakhir;
             system("CLS");
-            cout << "========================================";
-            cout << "=  Program Penghitung Nilai Mahasiswa  =";
-            cout << "========================================";
+            cout << "========================================" << endl;
+            cout << "=  Program Penghitung Nilai Mahasiswa  =" << endl;
+            cout << "========================================" << endl;
             cout << endl;
             cout << "Masukan Nilai Tugas : ";
             cin >> tugas;
@@ -60,6 +63,7 @@ int main()
 
 
             case 2:
+            system("Color a");
             int hargabarang, jumlahbarang, totalbayar;
             system("CLS");
             cout << "===================================" << endl;
@@ -72,6 +76,7 @@ int main()
             cin >> hargabarang;
             cout << "Masukan Jumlah Barang\t: ";
             cin >> jumlahbarang;
+            cout << endl;
 
             totalbayar = (hargabarang*jumlahbarang);
 
@@ -92,6 +97,7 @@ int main()
 
             case 3:
             int balok;
+            system("color a");
             system("CLS");
             cout << "==========================" << endl;
             cout << "=  Pilihan Penghitungan  =" << endl;
@@ -107,7 +113,11 @@ int main()
             int panjang, lebar,tinggi;
                 
                 case 1:
+                system("color a");
                 system("CLS");
+                cout << "=======================================" << endl;
+                cout << "=  Program Menghitung Keliling Balok  =" << endl;
+                cout << "=======================================" << endl;
                 cout << "Masukan Panjang : ";
                 cin >> panjang;
                 cout << "Masukan Lebar : ";
@@ -115,11 +125,15 @@ int main()
                 cout << "Masukan Tinggi : ";
                 cin >> tinggi;
                 cout << endl;
-                cout << "Keliling Balok Adalah : " << 4*(panjang+lebar+tinggi) << endl;
+                cout << "Keliling Balok Adalah : " << 4*(panjang+lebar+tinggi) << " Cm" << endl;
             break;
 
                 case 2:
+                system("color a");
                 system("CLS");
+                cout << "===================================" << endl;
+                cout << "=  Program Menghitung Luas Balok  =" << endl;
+                cout << "===================================" << endl;
                 cout << "Masukan Panjang : ";
                 cin >> panjang;
                 cout << "Masukan Lebar : ";
@@ -127,11 +141,15 @@ int main()
                 cout << "Masukan Tinggi : ";
                 cin >> tinggi;
                 cout << endl;
-                cout << "Luas Balok Adalah : " << 2*((panjang*lebar)+(panjang*tinggi)+(lebar*tinggi)) << endl;
+                cout << "Luas Balok Adalah : " << 2*((panjang*lebar)+(panjang*tinggi)+(lebar*tinggi)) << " Cm2" << endl;
             break;
 
                 case 3:
+                system("color a");
                 system("CLS");
+                cout << "=====================================" << endl;
+                cout << "=  Program Menghitung Volume Balok  =" << endl;
+                cout << "=====================================" << endl;
                 cout << "Masukan Panjang : ";
                 cin >> panjang;
                 cout << "Masukan Lebar : ";
@@ -139,7 +157,7 @@ int main()
                 cout << "Masukan Tinggi : ";
                 cin >> tinggi;
                 cout << endl;
-                cout << "Volume Balok Adalah : " << panjang*lebar*tinggi << endl;
+                cout << "Volume Balok Adalah : " << panjang*lebar*tinggi << " Cm3" << endl;
             break;
             }
         }
